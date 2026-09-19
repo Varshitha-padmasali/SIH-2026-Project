@@ -1,0 +1,19 @@
+{
+  "lessons": [
+    {
+      "id": "plants",
+      "title": "Plants need care",
+      "subject": "EVS",
+      "grade": 2,
+      "description": "Learn what helps a plant grow.",
+      "icon": "🌱",
+      "hero": "🌿",
+      "flashcards": [
+        {"id": "water", "emoji": "💧", "hindi": "पानी", "santali": "dak", "keywords": ["पानी", "जल"]},
+        {"id": "sun", "emoji": "☀️", "hindi": "सूरज की धूप", "santali": "singi marsal", "keywords": ["सूर्य", "धूप", "प्रकाश", "रोशनी"]},
+        {"id": "air", "emoji": "💨", "hindi": "हवा", "santali": "hawa", "keywords": ["हवा"]},
+        {"id": "soil", "emoji": "🟫", "hindi": "मिट्टी", "santali": "hasa", "keywords": ["मिट्टी"]}
+      ]
+    }
+  ]
+}

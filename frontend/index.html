@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#155e4d" />
+    <title>Siksha Saathi | Learn together</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <header>
+        <a class="brand" href="#top" aria-label="Siksha Saathi home"><span>🌿</span> Siksha Saathi</a>
+        <div class="connection"><i></i> Offline-ready</div>
+      </header>
+
+      <section class="intro" id="top">
+        <div>
+          <p class="eyebrow">CLASS 2 · EVS</p>
+          <h1>Help every child<br />learn in their language.</h1>
+          <p class="lede">Turn a teacher’s Hindi explanation into a short, visual learning moment for children.</p>
+        </div>
+        <div class="hero-art" aria-hidden="true"><span class="sun">☀️</span><span class="leaf leaf-one">🌿</span><span class="leaf leaf-two">🍃</span><span class="ground">▰▰▰▰</span></div>
+      </section>
+
+      <section class="teacher-panel" aria-labelledby="teacher-heading">
+        <div class="step-label">1 · TEACHER SPACE</div>
+        <h2 id="teacher-heading">Explain the lesson</h2>
+        <p>Speak in Hindi or type a classroom explanation.</p>
+        <label for="teacherText">Hindi teacher explanation</label>
+        <textarea id="teacherText" lang="hi">बच्चों, पौधों को बढ़ने के लिए पानी, हवा और सूर्य के प्रकाश की आवश्यकता होती है।</textarea>
+        <div class="teacher-actions">
+          <button class="record" id="recordButton" type="button" aria-pressed="false"><span>●</span> Record voice</button>
+          <button class="primary" id="processButton" type="button">Create learning cards <b>→</b></button>
+        </div>
+        <p class="hint" id="recordingHint">Voice recording needs browser permission. You can use the typed demo without it.</p>
+      </section>
+
+      <section class="learning" aria-live="polite">
+        <div class="section-heading"><div><p class="eyebrow">2 · CHILD SPACE</p><h2>Plants need care <span>🌱</span></h2></div><button id="listenButton" class="listen" type="button">🔊 <span>Listen</span></button></div>
+        <div class="translation-card">
+          <div class="card-tag">IN SANTALI · PROTOTYPE</div>
+          <p id="santaliText" class="santali">gidra-ko, dare-ko haran lagi dak, hawa ar singi marsal darkar kana.</p>
+          <p id="translationWarning" class="warning">Draft glossary output — verify with Santali speakers before use in class.</p>
+        </div>
+        <div class="simple-card">
+          <span class="spark">✦</span>
+          <div><p class="card-tag">SIMPLE IDEA</p><p id="simpleText">पौधों को बढ़ने के लिए पानी, हवा, धूप और मिट्टी चाहिए।</p></div>
+        </div>
+        <div class="cards" id="flashcards"></div>
+      </section>
+
+      <section class="trust"><span>⌁</span><div><strong>Built for learning without the internet.</strong><p>Lesson cards and the demo language resources stay on the device. More content can be added when a connection is available.</p></div></section>
+      <p class="status" id="status" role="status">Ready to create learning cards.</p>
+    </main>
+    <template id="flashcardTemplate"><article class="flashcard"><div class="emoji"></div><p class="hindi"></p><p class="santali-word"></p></article></template>
+    <script src="app.js"></script>
+  </body>
+</html>
