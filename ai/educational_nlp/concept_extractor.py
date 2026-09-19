@@ -12,7 +12,7 @@ EDUCATIONAL_CONCEPTS = {
     "food": ["food"],
     "growth": ["grow", "grows", "growth"],
     "oxygen": ["oxygen"],
-    "living_things": ["living", "living things"],
+    "living_things": ["living things"],
 }
 
 
@@ -20,20 +20,23 @@ def extract_concepts(text: str) -> list[str]:
     """
     Extract educational concepts from text.
 
-    This is a baseline implementation.
-    A proper NLP model can replace it later.
+    Uses phrase matching so both single-word
+    and multi-word concepts can be detected.
     """
 
     text = text.lower()
 
-    # Remove punctuation
+    # Remove punctuation but preserve spaces
     text = re.sub(r"[^\w\s]", "", text)
 
     concepts = []
 
     for concept, keywords in EDUCATIONAL_CONCEPTS.items():
         for keyword in keywords:
-            if keyword in text.split():
+            # Match complete words/phrases
+            pattern = r"\b" + re.escape(keyword) + r"\b"
+
+            if re.search(pattern, text):
                 concepts.append(concept)
                 break
 
