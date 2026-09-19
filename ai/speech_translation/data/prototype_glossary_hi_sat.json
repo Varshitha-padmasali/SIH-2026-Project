@@ -1,0 +1,35 @@
+{
+  "language_pair": "hi-sat",
+  "description": "Small offline prototype glossary for SIH26042 demo wiring. Verify every Santali term with a speaker before public presentation.",
+  "script_note": "Santali can be written in Ol Chiki, Devanagari, Bengali, Odia, and Latin scripts. These draft terms use Latin transliteration placeholders for early pipeline testing.",
+  "entries": [
+    { "hi": "पौधा", "sat": "dare" },
+    { "hi": "पौधों", "sat": "dare-ko" },
+    { "hi": "पेड़", "sat": "dare" },
+    { "hi": "बच्चों", "sat": "gidra-ko" },
+    { "hi": "बच्चे", "sat": "gidra-ko" },
+    { "hi": "पानी", "sat": "dak" },
+    { "hi": "हवा", "sat": "hawa" },
+    { "hi": "सूर्य", "sat": "singi" },
+    { "hi": "प्रकाश", "sat": "marsal" },
+    { "hi": "रोशनी", "sat": "marsal" },
+    { "hi": "मिट्टी", "sat": "hasa" },
+    { "hi": "भोजन", "sat": "jome" },
+    { "hi": "खाना", "sat": "jome" },
+    { "hi": "बढ़ने", "sat": "haran" },
+    { "hi": "बढ़ता", "sat": "haran-a" },
+    { "hi": "बढ़ती", "sat": "haran-a" },
+    { "hi": "जरूरत", "sat": "darkar" },
+    { "hi": "आवश्यकता", "sat": "darkar" },
+    { "hi": "होती", "sat": "huyug-a" },
+    { "hi": "होता", "sat": "huyug-a" },
+    { "hi": "है", "sat": "kana" },
+    { "hi": "हैं", "sat": "kana" },
+    { "hi": "और", "sat": "ar" },
+    { "hi": "के", "sat": "ren" },
+    { "hi": "लिए", "sat": "lagi" },
+    { "hi": "को", "sat": "re" },
+    { "hi": "की", "sat": "ren" }
+  ]
+}
+
